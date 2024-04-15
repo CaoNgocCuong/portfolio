@@ -1,7 +1,7 @@
 // Constants
-import { LOCALES } from "@/constants";
+import { LOCALES, NICK_NAME } from "@/constants";
 
 export const getInitialLocale = () => {
-  const savedLocale = localStorage.getItem("locale");
+  const savedLocale = localStorage.getItem(`${NICK_NAME}-locale`);
   return savedLocale || LOCALES.EN;
 };

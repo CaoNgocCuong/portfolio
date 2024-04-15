@@ -3,7 +3,7 @@ import { ReactNode, createContext, useContext } from "react";
 import { useTranslation } from "react-i18next";
 
 // Constants
-import { LANGUAGES } from "@/constants";
+import { LANGUAGES, NICK_NAME } from "@/constants";
 
 // Types
 import { Language, LanguageContextProps } from "@/types";
@@ -24,7 +24,7 @@ export const LanguageContextProvider = ({
 
   const handleClickChangeLanguage = (lng: Language) => {
     i18n.changeLanguage(lng);
-    localStorage.setItem("locale", lng);
+    localStorage.setItem(`${NICK_NAME}-locale`, lng);
   };
 
   return (
