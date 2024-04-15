@@ -10,12 +10,17 @@ import "./styles/global.css";
 import "./i18next.tsx";
 
 // Providers
-import { LanguageContextProvider } from "@/providers";
+import { LanguageContextProvider, ThemeProvider } from "@/providers";
+
+// Constants
+import { THEME } from "@/constants";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <LanguageContextProvider>
-      <App />
+      <ThemeProvider defaultTheme={THEME.DARK}>
+        <App />
+      </ThemeProvider>
     </LanguageContextProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 );

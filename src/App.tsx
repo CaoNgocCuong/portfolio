@@ -5,6 +5,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useLanguageContext } from "./providers";
+import { ModeToggle } from "./components";
 
 function App() {
   const { t, handleClickChangeLanguage } = useLanguageContext();
@@ -22,8 +23,8 @@ function App() {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-
       <h1 className="tw-text-3xl tw-font-bold tw-underline">{t("heading")}</h1>
+      <ModeToggle />
     </div>
   );
 }
