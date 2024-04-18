@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 
 // Styles
+import "./styles/index.css";
 import "./styles/global.css";
 
 // I18Next
@@ -22,5 +23,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <App />
       </ThemeProvider>
     </LanguageContextProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

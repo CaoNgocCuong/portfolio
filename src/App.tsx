@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -25,6 +26,13 @@ function App() {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
+      <br />
+      <div style={{ display: "flex", gap: 4 }}>
+        <Button>start-game</Button>
+        <Button variant="secondary">Button</Button>
+        <Button variant="ghost">Button</Button>
+        <Button variant="outline">Button</Button>
+      </div>
       <h1 className="tw-text-3xl tw-font-bold tw-underline">
         {getTranslateMessage(translations.heading)}
       </h1>
