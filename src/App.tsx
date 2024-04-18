@@ -6,9 +6,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useLanguageContext } from "./providers";
 import { ModeToggle } from "./components";
+import { translations } from "./translations";
+import { getTranslateMessage } from "@/translations/messages";
 
 function App() {
-  const { t, handleClickChangeLanguage } = useLanguageContext();
+  const { handleClickChangeLanguage } = useLanguageContext();
 
   return (
     <div>
@@ -23,7 +25,9 @@ function App() {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-      <h1 className="tw-text-3xl tw-font-bold tw-underline">{t("heading")}</h1>
+      <h1 className="tw-text-3xl tw-font-bold tw-underline">
+        {getTranslateMessage(translations.heading)}
+      </h1>
       <ModeToggle />
     </div>
   );
