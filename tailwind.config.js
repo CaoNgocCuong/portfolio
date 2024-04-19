@@ -21,6 +21,7 @@ module.exports = {
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
+        white: "hsl(var(--white))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -51,6 +52,20 @@ module.exports = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        custom: {
+          btn: {
+            primary: {
+              DEFAULT: "hsl(var(--accent-orange))",
+              foreground: "hsl(var(--primary-black))",
+              hover: "hsl(var(--accent-orange-hover))",
+            },
+            secondary: {
+              DEFAULT: "hsl(var(--accent-stealblue))",
+              foreground: "hsl(var(--accent-stealblue-foreground))",
+              hover: "hsl(var(--accent-stealblue-hover))",
+            },
+          },
         },
       },
       borderRadius: {
