@@ -1,5 +1,3 @@
-export * from "./language";
-
 // System
 export const NICK_NAME = "insideee-dev";
 export const THEME = {
@@ -7,3 +5,5 @@ export const THEME = {
   DARK: "dark",
   SYSTEM: "system",
 } as const;
+
+export * from "./language";

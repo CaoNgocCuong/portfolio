@@ -4,5 +4,10 @@
     "dark": "Dark",
     "system": "System"
   },
-  "heading": "Hello heading"
+  "navigation": {
+    "home": "_hello",
+    "about": "_about-me",
+    "project": "_projects",
+    "contact": "_contact-me"
+  }
 }

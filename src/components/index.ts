@@ -1,2 +1,3 @@
 export * from "./mode-toggle";
-export * from "./error-boundary";
+export * from "./common";
+export { default as ErrorBoundary } from "./error-boundary";

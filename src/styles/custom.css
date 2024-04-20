@@ -1,0 +1,16 @@
+@tailwind components;
+
+/* Custom classes */
+@layer components {
+  .workspace {
+    @apply tw-flex tw-flex-col tw-h-[calc(100vh_-_30px)] lg:tw-h-[calc(100vh_-_138px)] tw-bg-workspace-background tw-m-[15px] lg:tw-m-[69px] tw-rounded-lg tw-border tw-border-solid tw-border-border tw-overflow-hidden;
+  }
+
+  .heading__nickname {
+    @apply tw-text-workspace-foreground tw-indent-[22px] tw-leading-[56px] tw-cursor-pointer tw-transition-colors hover:tw-text-white lg:tw-w-[311px] lg:tw-border-r lg:tw-border-border;
+  }
+
+  .menu__item {
+    @apply tw-text-workspace-foreground tw-indent-[22px] tw-border-b tw-float-none tw-leading-[56px] tw-cursor-pointer tw-transition-colors hover:tw-text-white lg:tw-inline-block lg:tw-px-8 lg:tw-indent-0 lg:tw-border-b-0;
+  }
+}

@@ -1,7 +1,6 @@
 // Libraries
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
 
 // Styles
 import "./styles/index.css";
@@ -17,18 +16,16 @@ import { LanguageContextProvider, ThemeProvider } from "@/providers";
 import { THEME } from "@/constants";
 
 // Components
-import ErrorBoundary from "@/components/error-boundary";
+import { RouterProvider } from "react-router-dom";
 
-// eslint-disable-next-line react-refresh/only-export-components
-const PATH = "src/main.tsx";
+// Routers
+import { router } from "@/routes/root.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <LanguageContextProvider>
       <ThemeProvider defaultTheme={THEME.DARK}>
-        <ErrorBoundary path={PATH}>
-          <App />
-        </ErrorBoundary>
+        <RouterProvider router={router} />
       </ThemeProvider>
     </LanguageContextProvider>
   </React.StrictMode>,
