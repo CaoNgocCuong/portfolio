@@ -1,6 +1,7 @@
 // Libraries
 import { useState } from "react";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
 
 // Hooks
 import { useMediaQuery } from "usehooks-ts";
@@ -31,12 +32,13 @@ const Header = () => {
   const renderNavigation = () => {
     const list = Object.entries(NAVIGATION);
     const contentNav = list.map(([name, info], idx) => {
-      const { text } = info;
+      const { text, to } = info;
       const isLast = list.length - 1 === idx;
 
       return (
-        <div
+        <Link
           key={name}
+          to={to}
           className={classNames("menu__item", {
             "lg:tw-border-r": !isLast,
             "lg:tw-float-right": isLast,
@@ -45,7 +47,7 @@ const Header = () => {
           })}
         >
           {text}
-        </div>
+        </Link>
       );
     });
     return (
@@ -62,7 +64,9 @@ const Header = () => {
   return (
     <ErrorBoundary path={PATH}>
       <div className="tw-relative tw-flex tw-flex-col tw-w-full tw-border-b tw-border-border tw-h-14 lg:tw-flex-row lg:tw-static">
-        <div className="heading__nickname">{NICK_NAME}</div>
+        <Link to="/" className="heading__nickname">
+          {NICK_NAME}
+        </Link>
         {isDesktop ? (
           renderNavigation()
         ) : (
