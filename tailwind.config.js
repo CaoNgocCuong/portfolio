@@ -28,6 +28,7 @@ module.exports = {
         workspace: {
           background: "hsl(var(--primary-semi-dark))",
           foreground: "hsl(var(--secondary-light-stell-blue))",
+          foregroundHover: "hsl(var(--secondary-light-stell-blue-hover))",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",

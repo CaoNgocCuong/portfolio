@@ -8,6 +8,10 @@
     "home": "Trang chủ",
     "about": "Về tôi",
     "project": "Dự án nho nhỏ",
-    "contact": "Liên hệ tôi"
+    "contact": "Liên hệ tôi",
+    "blog": "Tôi viết gì đó"
+  },
+  "findMe": {
+    "title": "Tôi có ở:"
   }
 }

@@ -8,6 +8,7 @@ export const NAV_KEYS = {
   ABOUT: "about_me",
   PROJECT: "projects",
   CONTACT: "contact",
+  BLOG: "blogs",
 } as const;
 
 export const NAVIGATION = {
@@ -25,6 +26,11 @@ export const NAVIGATION = {
     key: NAV_KEYS.PROJECT,
     to: "/projects",
     text: getTranslateMessage(translations.navigation.project),
+  },
+  [NAV_KEYS.BLOG]: {
+    key: NAV_KEYS.BLOG,
+    to: "/blogs",
+    text: getTranslateMessage(translations.navigation.blogs),
   },
   [NAV_KEYS.CONTACT]: {
     key: NAV_KEYS.CONTACT,

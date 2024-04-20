@@ -8,6 +8,10 @@
     "home": "_hello",
     "about": "_about-me",
     "project": "_projects",
-    "contact": "_contact-me"
+    "contact": "_contact-me",
+    "blogs": "_blogs"
+  },
+  "findMe": {
+    "title": "find me in:"
   }
 }
